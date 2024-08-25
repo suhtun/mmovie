@@ -87,8 +87,10 @@ dependencies {
     //coil
     implementation(libs.coil.compose)
 
-    implementation(project(":core:remote"))
-    implementation(project(":core:common"))
-    implementation(project(":core:model"))
-    implementation(project(":core:data"))
+    implementation(project(":feature:movie"))
+//    implementation(project(":core:remote"))
+//    implementation(project(":core:common"))
+//    implementation(project(":core:model"))
+//    implementation(project(":core:data"))
+    implementation(project(":core:systemdesign"))
 }

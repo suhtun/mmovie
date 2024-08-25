@@ -1,4 +1,4 @@
-package com.su.mmovie.presentation
+package com.su.movie
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf

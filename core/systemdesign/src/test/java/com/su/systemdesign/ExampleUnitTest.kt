@@ -1,4 +1,4 @@
-package com.su.remote
+package com.su.systemdesign
 
 import org.junit.Test
 

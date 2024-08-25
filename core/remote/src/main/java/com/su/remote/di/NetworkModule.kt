@@ -1,6 +1,5 @@
-package com.su.mmovie.di
+package com.su.remote.di
 
-import com.su.remote.MovieApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

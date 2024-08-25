@@ -1,4 +1,4 @@
-package com.su.remote
+package com.su.systemdesign
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.su.remote.test", appContext.packageName)
+        assertEquals("com.su.systemdesign.test", appContext.packageName)
     }
 }

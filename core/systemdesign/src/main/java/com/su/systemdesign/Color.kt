@@ -1,4 +1,4 @@
-package com.su.mmovie.presentation.ui.theme
+package com.su.systemdesign
 
 import androidx.compose.ui.graphics.Color
 

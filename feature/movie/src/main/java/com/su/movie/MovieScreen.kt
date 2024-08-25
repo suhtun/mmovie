@@ -1,4 +1,4 @@
-package com.su.mmovie.presentation
+package com.su.movie
 
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
@@ -36,10 +36,6 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
-import com.su.model.MovieItem
-import com.su.mmovie.presentation.ui.theme.DeepOrange
-import com.su.mmovie.presentation.ui.theme.DeepOrangePrimary
-import com.su.mmovie.presentation.ui.theme.Orange
 
 
 @Composable
@@ -143,7 +139,7 @@ fun HorizontalPagerBoxWithIndicator(
         ) {
             repeat(movieItems.size) { iteration ->
                 val color =
-                    if (pagerState.currentPage == iteration) Orange else Color.White.copy(alpha = 0.5f)
+                    if (pagerState.currentPage == iteration) com.su.systemdesign.Orange else Color.White.copy(alpha = 0.5f)
                 Box(
                     modifier = Modifier
                         .padding(4.dp)
@@ -187,8 +183,8 @@ fun MovieItemsBox(
                     .background(
                         brush = Brush.linearGradient(
                             colors = listOf(
-                                DeepOrangePrimary,
-                                DeepOrange
+                                com.su.systemdesign.DeepOrangePrimary,
+                                com.su.systemdesign.DeepOrange
                             )
                         ), RoundedCornerShape(16.dp)
                     )) {
