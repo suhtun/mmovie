@@ -1,6 +1,6 @@
 package com.su.mmovie.di
 
-import com.su.mmovie.data.remote.MovieApi
+import com.su.remote.MovieApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -41,7 +41,7 @@ object AppModule {
 
     @Provides
     @Singleton
-    fun provideRestService(okHttpClient: OkHttpClient): MovieApi{
+    fun provideRestService(okHttpClient: OkHttpClient): com.su.remote.MovieApi {
         return Retrofit.Builder()
             .baseUrl("https://api.themoviedb.org/3/")
             .client(okHttpClient)

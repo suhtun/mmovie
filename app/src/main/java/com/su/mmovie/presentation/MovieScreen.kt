@@ -36,7 +36,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
-import com.su.mmovie.domain.MovieItem
+import com.su.model.MovieItem
 import com.su.mmovie.presentation.ui.theme.DeepOrange
 import com.su.mmovie.presentation.ui.theme.DeepOrangePrimary
 import com.su.mmovie.presentation.ui.theme.Orange
@@ -83,7 +83,7 @@ fun MovieScreen(
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun HorizontalPagerBoxWithIndicator(
-    movieItems: List<MovieItem>? = listOf()
+    movieItems: List<com.su.model.MovieItem>? = listOf()
 ) {
     if (movieItems.isNullOrEmpty()) return
 
@@ -160,7 +160,7 @@ fun HorizontalPagerBoxWithIndicator(
 @Composable
 fun MovieItemsBox(
     title: String,
-    movieItems: List<MovieItem>? = emptyList(),
+    movieItems: List<com.su.model.MovieItem>? = emptyList(),
     onShowMore: () -> Unit
 ) {
 

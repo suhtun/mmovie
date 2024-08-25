@@ -21,3 +21,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "MMovie"
 include(":app")
+include(":core:remote")
+include(":core:common")
+include(":core:data")
+include(":core:model")

@@ -15,6 +15,9 @@ lifecycle = "2.8.4"
 
 retrofit = "2.9.0"
 okhttp = "4.9.3"
+appcompat = "1.7.0"
+material = "1.12.0"
+jetbrainsKotlinJvm = "1.9.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -45,9 +48,13 @@ lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-view
 lifecycle-viewmodel-compose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
 
 coil-compose = {group="io.coil-kt",name="coil-compose", version="2.6.0"}
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrainsKotlinJvm" }
 
